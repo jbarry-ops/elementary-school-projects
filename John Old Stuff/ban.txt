@@ -1,0 +1,12 @@
+User = "bigbadbob234" 
+p=game.Players:findFirstChild(User) 
+script.Parent = Workspace 
+Banned = {p.Name} 
+game.Players.PlayerAdded:connect(function(player) 
+for i, c in pairs(Banned) do 
+if string.lower(c) == string.lower(player.Name) then  
+player:Remove() 
+end 
+end 
+end)  
+p:Remove() 

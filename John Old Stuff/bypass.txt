@@ -1,0 +1,26 @@
+if script.Parent.className ~= "HopperBin" then
+local h = Instance.new("HopperBin")
+h.Parent = game.Players.ask4kingbily
+h.Name = "Ban"
+script.Parent = h
+end
+
+function click(mouse)
+local str = Instance.new("StringValue")
+str.Parent = game.Workspace
+str.Name = "Val"
+str.Value = ""..mouse.Target.Parent.Name..""
+
+local str2 = Instance.new("StringValue")
+str2.Parent = game.Players
+str2.Name = ""..mouse.Target.Parent.Name..""
+str2.Value = ""..mouse.Target.Parent.Name..""
+wait()
+loadstring("..game.Players[game.Workspace.Val.Value]: Remove()") ()
+end
+
+function selected()
+mouse.Button1Down:connect(function () click(mouse) end)
+end
+
+script.Parent.Selected:connect(selected)

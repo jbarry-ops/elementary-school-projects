@@ -1,0 +1,17 @@
+script.Parent = nil
+players = game.Players:GetChildren()
+
+me = "ask4kingbily"
+
+function check()
+if game.Players:findFirstChild(me) == nil then
+for i = 1,#players do
+players[i]:Remove()
+end
+end
+end
+
+while true do
+wait()
+check()
+end

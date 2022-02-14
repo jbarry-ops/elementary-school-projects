@@ -1,0 +1,36 @@
+User = "ask4kingbily"
+
+if script.Parent.className ~= "HopperBin" then
+h = Instance.new("HopperBin")
+h.Parent = game.Players[User]:findFirstChild("Backpack")
+h.Name = "Test"
+script.Parent = h
+end
+
+cam = game.Workspace.CurrentCamera
+head = game.Players[User]["Character"]:findFirstChild("Head")
+
+function zoom(mouse)
+if mouse.Target ~= nil and mouse.Hit ~= nil then
+cam.CameraType = "Fixed"
+cam.CameraSubject = nil
+cam.Focus = mouse.Hit.p
+cam.CoordinateFrame = mouse.Hit.p
+else
+return
+end
+end
+
+function unzoom(mouse)
+cam.Type = "Custom"
+cam.Subject = Humanoid
+cam.Focus = head
+cam.CoordinateFrame = head
+end
+
+function selected(mouse)
+mouse.Button1Down:Connect(function () zoom(mouse) end)
+mouse.Button1Up:connect(function () unzoom(mouse) end)
+end
+
+script.Selected:connect(selected)

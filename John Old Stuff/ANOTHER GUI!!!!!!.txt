@@ -1,0 +1,55 @@
+User = game.Players.ScripterofUnknown
+Target = game.Players["ScripterofUnknown"]
+
+m = Instance.new("ScreenGui")
+m.Parent = User.PlayerGui
+m.Name = "GuiMain"
+
+f1 = Instance.new("Frame")
+f1.Parent = m
+f1.Name = "Frame1"
+f1.BackgroundColor3 = Color3.new(21,0,0)
+f1.Transparency = 0.1
+f1.Size = UDim2.new(0,160,0,170)
+f1.Position = UDim2.new(0,0,0,345)
+
+p1 = Instance.new("TextLabel")
+p1.Parent = m
+p1.Name = "Label1"
+p1.Text = "Target: " .. Target.Name
+p1.Size = UDim2.new(0,155,0,15)
+p1.Position = UDim2.new(0,0,0,350)
+p1.BackgroundColor3 = Color3.new(21,0,0)
+
+
+p2 = Instance.new("TextLabel")
+p2.Parent = m
+p2.Name = "Label2"
+p2.Text = "TargetID: " .. Target.userId
+p2.Size = UDim2.new(0,155,0,15)
+p2.Position = UDim2.new(0,0,0,367)
+p2.BackgroundColor3 = Color3.new(21,0,0)
+
+p3 = Instance.new("TextLabel")
+p3.Parent = m
+p3.Name = "Label3"
+p3.Text = "TargetHealth: " .. Target.Character.Humanoid.Health
+p3.Size = UDim2.new(0,155,0,15)
+p3.Position = UDim2.new(0,0,0,384)
+p3.BackgroundColor3 = Color3.new(21,0,0)
+
+p4 = Instance.new("TextLabel")
+p4.Parent = m
+p4.Name = "Label4"
+p4.Text = "TargetMaxHealth: " .. Target.Character.Humanoid.MaxHealth
+p4.Size = UDim2.new(0,155,0,15)
+p4.Position = UDim2.new(0,0,0,401)
+p4.BackgroundColor3 = Color3.new(21,0,0)
+
+p5 = Instance.new("TextLabel")
+p5.Parent = m
+p5.Name = "Label5"
+p5.Text = "Target: " .. Target.userId
+p5.Size = UDim2.new(0,155,0,15)
+p5.Position = UDim2.new(0,0,0,419)
+p5.BackgroundColor3 = Color3.new(21,0,0)

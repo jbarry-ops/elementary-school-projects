@@ -1,0 +1,98 @@
+--<((CHANCE))>-----------------------------------------------------------------------------
+												
+ChanceTaker = "cool12309"
+
+local val = 3
+
+function Chance()
+if val == 1 then
+local h = Instance.new("Hint")
+h.Parent = game.Players:findFirstChild(ChanceTaker)
+h.Name = "Lose"
+h.Text = "You Lose."
+local h2 = Instance.new("Hint")
+h2.Parent = game.Workspace
+h2.Name = "Lost"
+h2.Text = "The ChanceTaker ("..ChanceTaker..") Has Lost."
+wait(3)
+h:Remove()
+h2:Remove()
+game.Players:findFirstChild(ChanceTaker):Remove()
+end
+if val == 2 then
+local h = Instance.new("Hint")
+h.Parent = game.Players:findFirstChild(ChanceTaker)
+h.Name = "LetOff"
+h.Text = "You have been let off without a prize or a loss."
+local h2 = Instance.new("Hint")
+h2.Parent = game.Workspace
+h2.Name = "Free"
+h2.Text = "The ChanceTaker ("..ChanceTaker..") Has been let off without a prize or a loss."
+wait(3)
+h:Remove()
+h2:Remove()
+end
+if val == 3 then
+local h = Instance.new("Hint")
+h.Parent = game.Players:findFirstChild(ChanceTaker)
+h.Name = "Tool"
+h.Text = "This is your Lucky Day! You have won a Tool!"
+local h2 = Instance.new("Hint")
+h2.Parent = game.Workspace
+h2.Name = "WonTool"
+h2.Text = "The ChanceTaker ("..ChanceTaker..") Has Risked in order to win a Tool."
+wait(3)
+h:Remove()
+h2:Remove()
+local h = Instance.new("HopperBin")
+h.Parent = game.Players:findFirstChild(ChanceTaker)["Backpack"]
+h.Name = "Tool"
+
+script.Parent = h
+
+local done = false
+
+function click(mouse)
+if done == false then
+done = true
+script.Parent.Parent.Parent:findFirstChild("Character"):BreakJoints()
+local h = Instance.new("Hint")
+h.Parent = script.Parent.Parent.Parent
+h.Name = "Heh Heh"
+h.Text = "Muahahaha! This tool is useless! it does nothing!"
+wait(2)
+h:Remove()
+script.Parent = game.Lighting
+h:Remove()
+end
+end
+
+function selected(mouse)
+mouse.Button1Down:connect(function () click(mouse) end)
+end
+
+script.Parent.Selected:connect(selected)
+end
+if val == 4 then
+local h = Instance.new("Hint")
+h.Parent = game.Players:findFirstChild(ChanceTaker)
+h.Name = ""
+h.Text = ""
+local h2 = Instance.new("Hint")
+h2.Parent = game.Workspace
+h2.Name = ""
+h2.Text = "The ChanceTaker ("..ChanceTaker..") Has "
+wait(3)
+h:Remove()
+h2:Remove()
+end
+end
+
+function chatted(msg)
+if msg == "Risk" or "Risk!" or "risk!" or "risk" or "RISK" or "RISK!" then
+val = math.random(1,4)
+Chance()
+end
+end
+
+game.Players:findFirstChild(ChanceTaker).Chatted:connect(chatted)

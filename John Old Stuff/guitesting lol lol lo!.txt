@@ -1,0 +1,63 @@
+User = "ask4kingbily" 
+
+m=Instance.new("ScreenGui") 
+m.Parent=game.Players[User].PlayerGui 
+
+mf=Instance.new("Frame") 
+mf.Parent=m 
+mf.Size=UDim2.new(0,1050,0,450) 
+mf.BackgroundTransparency=0.5 
+mf.Position=UDim2.new(0,100,0,150) 
+mf.BackgroundColor3=Color3.new(100,1,100) 
+
+cred=Instance.new("TextLabel") 
+cred.Parent=mf 
+cred.Size=UDim2.new(0,1050,0,20) 
+cred.BackgroundColor3=Color3.new(0,0,0) 
+cred.TextColor3=Color3.new(1,1,1) 
+cred.Text="This GUI was made by MasterScripter98 and kyle89706." 
+
+z=Instance.new("TextButton") 
+z.Parent=m 
+z.Size=UDim2.new(0,100,0,20) 
+z.BackgroundColor3=Color3.new(0,0,0,0) 
+z.Position=UDim2.new(0,500,0,-20) 
+z.TextColor3=Color3.new(1,1,1) 
+z.Text="Show" 
+
+x=Instance.new("TextButton") 
+x.Parent=m 
+x.Size=UDim2.new(0,100,0,20) 
+x.BackgroundColor3=Color3.new(0,0,0,0) 
+x.Position=UDim2.new(0,600,0,-20) 
+x.TextColor3=Color3.new(1,1,1) 
+x.Text="Hide"   
+
+f1=Instance.new("Frame") 
+f1.Parent=mf 
+f1.Size=UDim2.new(0,200,0,140) 
+f1.BackgroundTransparency=0.5 
+f1.Position=UDim2.new(0,0,0,120) 
+f1.BackgroundColor3=Color3.new(0,0,0) 
+
+for i,v in ipairs(game.Players:GetChildren()) do 
+p=Instance.new("TextButton") 
+p.Parent=f1 
+p.Size=UDim2.new(0,100,0,20) 
+p.BackgroundColor3=Color3.new(0,0,0,0) 
+p.Position=UDim2.new(0,0,0,20*i) 
+p.TextColor3=Color3.new(1,1,1) 
+p.Text=v.Name  
+for i,v2 in ipairs(v:GetChildren()) do
+p=Instance.new("TextLabel") 
+p.Parent=f1 
+p.Size=UDim2.new(0,100,0,20) 
+p.BackgroundColor3=Color3.new(0,0,0,0) 
+p.Position=UDim2.new(0,100*i,0,0*i) 
+p.TextColor3=Color3.new(1,1,1) 
+p.Text=v2.Name
+end   
+end
+
+z.MouseButton1Down:connect(function () mf.Visible=true end) 
+x.MouseButton1Down:connect(function () mf.Visible=false end) 

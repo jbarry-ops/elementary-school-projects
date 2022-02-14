@@ -1,0 +1,98 @@
+if script.Parent.className ~= "HopperBin" then
+h = Instance.new("HopperBin")
+h.Parent = game.Players.ask4kingbily.Backpack
+h.Name = "Tool"
+
+script.Parent = h
+end
+
+script.Parent.Selected:connect(function(mouse)
+
+mouse.KeyDown:conect(function(key)
+
+local Target = mouse.Target
+
+if key == "c" then
+if mouse.Hit == nil then return end
+Target.Color = Target.Color + Color3.new(0.1,0,0)
+
+else
+
+if key == "v" then
+if mouse.Hit == nil then return end
+Target.Color = Target.Color + Color3.new(0,0.1,0)
+
+else
+
+if key == "b" then
+if mouse.Hit == nil then return end
+Target.Color = Target.Color + Color3.new(0,0,0.1)
+
+else
+
+if key == "x" then
+if mouse.Hit == nil then return end
+Target.Size = Target.Size + Vector3.new(1,0,0)
+
+else
+
+if key == "y" then
+if mouse.Hit == nil then return end
+Target.Size = Target.Size + Vector3.new(0,1,0)
+
+else
+
+if key == "z" then
+if mouse.Hit == nil then return end
+Target.Size = Target.Size + Vector3.new(0,0,1)
+
+else
+
+if key == "e" then
+if mouse.Hit == nil then return end
+Target.Color = Target.Color - Color3.new(0.1,0,0)
+
+else
+
+if key == "r" then
+if mouse.Hit == nil then return end
+Target.Color = Target.Color - Color3.new(0,0.1,0)
+
+else
+
+if key == "t" then
+if mouse.Hit == nil then return end
+Target.Color = Target.Color - Color3.new(0,0,0.1)
+
+else
+
+if key == "h" then
+if mouse.Hit == nil then return end
+Target.Size = Target.Size - Vector3.new(1,0,0)
+
+else
+
+if key == "j" then
+if mouse.Hit == nil then return end
+Target.Size = Target.Size - Vector3.new(0,1,0)
+
+else
+
+if key == "k" then
+if mouse.Hit == nil then return end
+Target.Size = Target.Size - Vector3.new(0,0,1)
+end
+end
+end
+end
+end
+end
+end
+end
+end
+end
+end
+end
+end)
+
+end)

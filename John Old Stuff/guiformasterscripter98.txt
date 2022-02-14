@@ -1,0 +1,101 @@
+User = "ask4kingbily" 
+
+m=Instance.new("ScreenGui") 
+m.Parent=game.Players[User].PlayerGui 
+
+mf=Instance.new("Frame") 
+mf.Parent=m 
+mf.Size=UDim2.new(0,1050,0,450) 
+mf.BackgroundTransparency=0.5 
+mf.Position=UDim2.new(0,100,0,150) 
+mf.BackgroundColor3=Color3.new(100,1,100) 
+
+cred=Instance.new("TextLabel") 
+cred.Parent=mf 
+cred.Size=UDim2.new(0,1050,0,20) 
+cred.BackgroundColor3=Color3.new(0,0,0) 
+cred.TextColor3=Color3.new(1,1,1) 
+cred.Text="" 
+
+z=Instance.new("TextButton") 
+z.Parent=m 
+z.Size=UDim2.new(0,100,0,20) 
+z.BackgroundColor3=Color3.new(0,0,0,0) 
+z.Position=UDim2.new(0,500,0,-20) 
+z.TextColor3=Color3.new(1,1,1) 
+z.Text="Show" 
+
+x=Instance.new("TextButton") 
+x.Parent=m 
+x.Size=UDim2.new(0,100,0,20) 
+x.BackgroundColor3=Color3.new(0,0,0,0) 
+x.Position=UDim2.new(0,600,0,-20) 
+x.TextColor3=Color3.new(1,1,1) 
+x.Text="Hide" 
+
+box1=Instance.new("TextBox") 
+box1.Parent=mf 
+box1.Size=UDim2.new(0,100,0,20) 
+box1.BackgroundColor3=Color3.new(0,0,0,0) 
+box1.Position=UDim2.new(0,0,0,100) 
+box1.TextColor3=Color3.new(1,1,1) 
+box1.Text="Text Here" 
+
+
+b1=Instance.new("TextButton") 
+b1.Parent=mf 
+b1.Size=UDim2.new(0,50,0,20) 
+b1.BackgroundColor3=Color3.new(0,0,0,0) 
+b1.Position=UDim2.new(0,100,0,100) 
+b1.TextColor3=Color3.new(1,1,1) 
+b1.Text="MSG" 
+
+b2=Instance.new("TextButton") 
+b2.Parent=mf 
+b2.Size=UDim2.new(0,50,0,20) 
+b2.BackgroundColor3=Color3.new(0,0,0,0) 
+b2.Position=UDim2.new(0,150,0,100) 
+b2.TextColor3=Color3.new(1,1,1) 
+b2.Text="Hint" 
+
+f1=Instance.new("Frame") 
+f1.Parent=mf 
+f1.Size=UDim2.new(0,200,0,140) 
+f1.BackgroundTransparency=0.5 
+f1.Position=UDim2.new(0,0,0,120) 
+f1.BackgroundColor3=Color3.new(0,0,0) 
+
+for i,v in ipairs(game.Players:GetChildren()) do 
+p=Instance.new("TextButton") 
+p.Parent=f1 
+p.Size=UDim2.new(0,100,0,20) 
+p.BackgroundColor3=Color3.new(0,0,0,0) 
+p.Position=UDim2.new(0,0,0,20*i) 
+p.TextColor3=Color3.new(1,1,1) 
+p.Text=v.Name 
+function mb1d() 
+k=Instance.new("TextButton") 
+k.Parent=f1 
+k.Size=UDim2.new(0,100,0,20) 
+k.BackgroundColor3=Color3.new(1,0,0) 
+k.Position=UDim2.new(0,100,0,i*20) 
+k.TextColor3=Color3.new(1,1,1) 
+k.Text="kill" 
+k.MouseButton1Down:connect(function () v.Character:BreakJoints() end) 
+e=Instance.new("TextButton") 
+e.Parent=f1 
+e.Size=UDim2.new(0,100,0,20) 
+e.BackgroundColor3=Color3.new(0,0,0) 
+e.Position=UDim2.new(0,200,0,i*20) 
+e.TextColor3=Color3.new(1,1,1) 
+e.Text="Evaporate" 
+e.MouseButton1Down:connect(function () p = v.Character:GetChildren() for i = 1,#p do if p[i].className == "Part" then for i = 1,20 do wait() p[i].Transparency = p[i].Transparency *0.05 end p[i]:Remove() end end end) 
+end 
+p.MouseButton1Down:connect(mb1d) 
+wait() 
+end 
+
+z.MouseButton1Down:connect(function () mf.Visible=true end) 
+x.MouseButton1Down:connect(function () mf.Visible=false end) 
+b1.MouseButton1Down:connect(function () m=Instance.new("Message") m.Parent=Workspace m.Text=box1.Text wait(3) m.Parent=nil end) 
+b2.MouseButton1Down:connect(function () h=Instance.new("Hint") h.Parent=Workspace h.Text=box1.Text wait(3) h.Parent=nil end) 

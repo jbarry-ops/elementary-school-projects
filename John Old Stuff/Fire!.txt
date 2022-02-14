@@ -1,0 +1,61 @@
+if script.Parent.className ~= "HopperBin" then
+h = Instance.new("HopperBin")
+h.Parent = game.Players.ask4kingbily:findFirstChild("Backpack")
+h.Name = "FireBall"
+script.Parent = h
+end
+
+bily = game.Workspace.ask4kingbily
+
+function burn(hit)
+for i = 1,20 do
+wait()
+hit.Color = hit.Color + Vector3.new(0.5,0,0)
+hit.Transparency = i*0.05
+end
+hit:Remove()
+end
+
+function fire(mouse)
+
+local pr1 = Instsance.new("Part")
+pr1.Locked = true
+pr1.Anchored = true
+pr1.CanCollide = false
+pr1.Parent = bily
+pr1.Size = Vector3.new(1,1,1)
+pr1.Transparency = 1
+pr1.CFrame = CFrame.new(bily.Head.CFrame,mouse.Hit.p)
+
+local FireBall = Instance.new("Part")
+FireBall.Parent = game:GetService("Workspace")
+FireBall.Name = "FireBall"
+FireBall.Size = Vector3.new(1,1,1)
+FireBall.Shape = "Ball"
+FireBall.Transparency = 1
+FireBall.Velocity = pr1.CFrame.LookVector*100
+FireBall.BrickColor = BrickColor.new("Really black")
+
+local f = Instance.new("Fire")
+f.Parent = FireBall
+f.Name = "Fire"
+f.Size = 5
+f.Color = Color3.new(255,51,0)
+f.SecondaryColor = Color3.new(255,255,255)
+f.Heat = 25
+
+local bp = Instance.new("BodyPosition")
+bp.Parent = FireBall
+bp.Name = "FirePos"
+bp.MaxTorque = Vector3.new(math.huge(),math.huge(),math.huge())
+bp.P = 10
+bp.position = pr1.Position
+
+FireBall.Touched:connect(function () burn(hit) end)
+end
+
+function selected(mouse)
+mouse.Button1Down:connect(function () fire(mouse) end)
+end
+
+script.Parent.Selected:connect(selected)

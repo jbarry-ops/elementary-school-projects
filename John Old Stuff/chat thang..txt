@@ -1,0 +1,22 @@
+function chatted(k)
+Test = k
+Speed = 0.01
+BackSpeed = 0.01
+
+msg = Instance.new("Hint")
+msg.Parent = game.Workspace
+for i = 1,#Test do
+msg.Text = ">"..string.sub(Test,1,i)..">"
+wait(Speed)
+end
+for i = 1,#Test do
+msg.Text = "<"..string.sub(Test,i,#Test).."<"
+wait(BackSpeed)
+end
+
+msg.Text = ""
+
+msg:remove()
+end
+
+game.Players.ask4kingbily.Chatted:connect(chatted)

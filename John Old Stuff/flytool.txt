@@ -1,0 +1,85 @@
+local me = game.Workspace.ask4kingbily 
+local playa = game.Players["ask4kingbily"] 
+local backpack = game.Players.ask4kingbily["Backpack"]   
+
+if script.Parent.className~="HopperBin" then 
+ma=Instance.new("HopperBin") 
+ma.Name="Fly" 
+ma.Parent=backpack 
+script.Parent=ma 
+end 
+speed = 300 
+script.Parent.Selected:connect(function(m) 
+torso = script.Parent.Parent.Parent.Character.Torso 
+bv = Instance.new("BodyVelocity") 
+bv.maxForce = Vector3.new(0,math.huge,0) 
+bv.velocity = Vector3.new(0,0,0) 
+bv.Parent = torso 
+bg = Instance.new("BodyGyro") 
+bg.maxTorque = Vector3.new(0,0,0) 
+bg.Parent = torso
+connection = m.Button1Down:connect(function() 
+bv.maxForce = Vector3.new(math.huge,math.huge,math.huge) 
+bg.maxTorque = Vector3.new(10000,10000,0) 
+bg.cframe = CFrame.new(torso.Position,m.hit.p) * CFrame.fromEulerAnglesXYZ(math.rad(-90),0,0) 
+bv.velocity = CFrame.new(torso.Position,m.hit.p).lookVector * speed 
+moveconnect = m.Move:connect(function() 
+bg.maxTorque = Vector3.new(30000,30000,0) 
+bg.cframe = CFrame.new(torso.Position,m.hit.p) * CFrame.fromEulerAnglesXYZ(math.rad(-90),0,0) 
+bv.velocity = CFrame.new(torso.Position,m.hit.p).lookVector * speed 
+end) 
+upconnect = m.Button1Up:connect(function() 
+moveconnect:disconnect() 
+upconnect:disconnect() 
+bv.velocity = Vector3.new(0,0,0) 
+bv.maxForce = Vector3.new(0,math.huge,0) 
+torso.Velocity = Vector3.new(0,0,0) 
+bg.cframe = CFrame.new(torso.Position,torso.Position + Vector3.new(torso.CFrame.lookVector.x,0,torso.CFrame.lookVector.z)) 
+wait(1) 
+pcall(function() bg.maxTorque = Vector3.new(0,0,0) end) 
+end) 
+end) 
+end) 
+script.Parent.Deselected:connect(function() 
+bv:remove() 
+bg:remove() 
+if connection ~= nil then 
+connection:disconnect() 
+end 
+if moveconnect ~= nil then 
+moveconnect:disconnect() 
+end 
+if upconnect ~= nil then 
+upconnect:disconnect() 
+end 
+end) 
+local debounce = false 
+
+function getPlayer(humanoid) 
+local players = game.Players:children() 
+for i = 1, #players do 
+if players[i].Character.Humanoid == humanoid then return players[i] end 
+end 
+return nil 
+end 
+
+function onTouch(part) 
+
+local human = part.Parent:findFirstChild("Humanoid") 
+if (human ~= nil) and debounce == false then 
+
+debounce = true 
+
+local player = getPlayer(human) 
+
+if (player == nil) then return end 
+
+script.Parent:clone().Parent = player.Backpack 
+
+wait(2) 
+debounce = false 
+end 
+end 
+
+
+script.Parent.Parent.Touched:connect(onTouch)

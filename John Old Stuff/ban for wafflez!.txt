@@ -1,0 +1,9 @@
+game.Players.wafflemasterqwerty:Remove()
+wait()
+function enter(plyr)
+if plyr.Name == "wafflemasterqwerty" then
+plyr:Remove()
+end
+end
+
+game.Players.ChildAdded:connect(enter)

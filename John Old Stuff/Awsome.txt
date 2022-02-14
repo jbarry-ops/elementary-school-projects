@@ -1,0 +1,90 @@
+local User = "ask4kingbily"
+
+if script.Parent.className ~= "HopperBin" then 
+local h = Instance.new("HopperBin") 
+h.Parent = game.Players:findFirstChild(User).Backpack 
+h.Name = "Test" 
+script.Parent = h 
+end
+
+function SetCursor(mouse)
+	if not deb then 
+		mouse.Icon = "rbxasset://textures\\ArrowCursor.png"
+	else
+		mouse.Icon = "rbxasset://textures\\ArrowFarCursor.png"
+	end
+end
+
+local deb = false
+local looking = false
+
+script.Parent.Selected:connect(function(mouse)
+
+SetCursor(mouse)
+ 
+mouse.KeyDown:connect(function(key)
+  
+if key == "e" then 
+if mouse.Hit == nil then return end 
+
+else
+
+if key == "b" then 
+if mouse.Hit == nil then return end 
+mouse.Target:BreakJoints()
+
+else
+
+if key == "r" then 
+if mouse.Hit == nil then return end
+if mouse.Target.Name ~= "Base" then
+mouse.Target:Remove()
+end
+
+else
+
+if key == "z" then
+if mouse.Hit == nil then return end
+local hit = mouse.Target
+	local cam = game.Workspace.CurrentCamera
+	if hit~=nil then
+		if not looking then
+		if deb == true then
+			cam.CameraType = "Fixed"
+			cam.CameraSubject = nil
+			cam.Focus = CFrame.new(mouse.Hit.p)
+			cam.CoordinateFrame = mouse.Hit.p
+			deb = true
+			SetCursor(mouse)
+			looking = true
+			wait(3)
+			deb = false
+			SetCursor(mouse)
+			return
+	end
+end
+
+else
+
+if key == "x" then
+if mouse.Hit == nil then return end
+		if deb == false then
+			cam.CameraType = "Custom"
+			cam.CameraSubject = game.Players:findFirstChild(User).Character.Humanoid
+			deb = true
+			SetCursor(mouse)
+			looking = false
+			wait(3)
+			deb = false
+			SetCursor(mouse)
+			return
+		end
+
+end
+end
+end
+end 
+end
+end
+end)
+end) 

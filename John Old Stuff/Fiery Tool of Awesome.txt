@@ -1,0 +1,66 @@
+King = "ask4kingbily"
+
+if script.Parent.className ~= "HopperBin" then 
+local h = Instance.new("HopperBin") 
+h.Parent = game.Players[King]:findFirstChild("Backpack") 
+h.Name = "Fiery Tool" 
+script.Parent = h 
+end
+
+function BaleFire(mouse)
+end
+
+function FireShield(mouse)
+end
+
+function Smite(mouse)
+local e = Instance.new("Explosion")
+e.Parent = game.Workspace
+e.Name = "Smite"
+e.Position = mouse.Hit.p
+e.BlastPressure = 20
+e.BlastRadius = 5
+end
+
+function Explode()
+local e = Instance.new("Explosion")
+e.Parent = game.Players[King].Character
+e.Name = "Explode"
+e.Position = game.Players[King].Character:findFirstChild("Torso").Position
+e.BlastPressure = 20
+e.BlastRadius = 5
+end
+
+script.Parent.Selected:connect(function(mouse)
+
+SetCursor(mouse)
+ 
+mouse.KeyDown:connect(function(key)
+
+if key == "b" then
+if mouse.Hit ~= nil then return end
+BaleFire()
+
+else
+
+if key == "f" then
+if mouse.Hit ~= nil then return end
+FireShield()
+
+else
+
+if key == "s" then
+if mouse.Hit ~= nil then return end
+Smite()
+
+else
+
+if key == "r" then
+Explode()
+
+end
+end
+end
+end
+end)
+end) 

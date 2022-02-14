@@ -1,0 +1,508 @@
+ask4kingbily = game.Workspace.ask4kingbily
+mod = Instance.new("Model") 
+mod.Parent = ask4kingbily 
+mod.Name = "Ask4kingbily" 
+wait() 
+Torso2 = Instance.new("Part") 
+Torso2.formFactor = 2 
+Torso2.Size = Vector3.new(1, 1, 1) 
+Torso2.Color = Color3.new(-1,-1,-1)
+Torso2.Name = "Torso2" 
+Torso2.Reflectance = 0
+Torso2.TopSurface = 0
+Torso2.Transparency = 1 
+Torso2.CanCollide = false 
+Torso2.Parent = mod 
+Torso2.BottomSurface = 0 
+Torsom2 = Instance.new("SpecialMesh")
+Torsom2.Parent = Torso2
+Torsom2.Name = "Mesh"
+Torsom2.Scale = Vector3.new(7,7,7)
+Torsom2.VertexColor = Vector3.new(0,0,0)
+Torsom2.MeshType = "Sphere"
+Torsow2 = Instance.new("Weld") 
+Torsow2.Part0 = ask4kingbily["Torso"] 
+Torsow2.Part1 = Torso2 
+Torsow2.Parent = Torso2 
+Torsow2.C0 = CFrame.new(0, 0, 0)*CFrame.fromEulerAnglesXYZ(0, 0, 0)
+
+Torso3 = Instance.new("Part") 
+Torso3.formFactor = 2 
+Torso3.Size = Vector3.new(1, 1, 1) 
+Torso3.Color = Color3.new(-1,-1,-1)
+Torso3.Name = "Torso3" 
+Torso3.Reflectance = 0
+Torso3.TopSurface = 0
+Torso3.Transparency = 1 
+Torso3.CanCollide = false 
+Torso3.Parent = mod 
+Torso3.BottomSurface = 0 
+Torsom3 = Instance.new("SpecialMesh")
+Torsom3.Parent = Torso3
+Torsom3.Name = "Mesh"
+Torsom3.Scale = Vector3.new(7.2,7.2,7.2)
+Torsom3.VertexColor = Vector3.new(0,0,0)
+Torsom3.MeshType = "Sphere"
+Torsow3 = Instance.new("Weld") 
+Torsow3.Part0 = ask4kingbily["Torso"] 
+Torsow3.Part1 = Torso3 
+Torsow3.Parent = Torso3 
+Torsow3.C0 = CFrame.new(0, 0, 0)*CFrame.fromEulerAnglesXYZ(0, 0, 0)
+
+Torso4 = Instance.new("Part") 
+Torso4.formFactor = 2 
+Torso4.Size = Vector3.new(1, 1, 1) 
+Torso4.Color = Color3.new(-1,-1,-1)
+Torso4.Name = "Torso4" 
+Torso4.Reflectance = 0
+Torso4.TopSurface = 0
+Torso4.Transparency = 1 
+Torso4.CanCollide = false 
+Torso4.Parent = mod 
+Torso4.BottomSurface = 0 
+Torsom4 = Instance.new("SpecialMesh")
+Torsom4.Parent = Torso4
+Torsom4.Name = "Mesh"
+Torsom4.Scale = Vector3.new(7.4,7.4,7.4)
+Torsom4.VertexColor = Vector3.new(0,0,0)
+Torsom4.MeshType = "Sphere"
+Torsow4 = Instance.new("Weld") 
+Torsow4.Part0 = ask4kingbily["Torso"] 
+Torsow4.Part1 = Torso4 
+Torsow4.Parent = Torso4 
+Torsow4.C0 = CFrame.new(0, 0, 0)*CFrame.fromEulerAnglesXYZ(0, 0, 0)
+
+Torso5 = Instance.new("Part") 
+Torso5.formFactor = 2 
+Torso5.Size = Vector3.new(1, 1, 1) 
+Torso5.Color = Color3.new(-1,-1,-1)
+Torso5.Name = "Torso5" 
+Torso5.Reflectance = 0
+Torso5.TopSurface = 0
+Torso5.Transparency = 1 
+Torso5.CanCollide = false 
+Torso5.Parent = mod 
+Torso5.BottomSurface = 0 
+Torsom5 = Instance.new("SpecialMesh")
+Torsom5.Parent = Torso5
+Torsom5.Name = "Mesh"
+Torsom5.Scale = Vector3.new(7.6,7.6,7.6)
+Torsom5.VertexColor = Vector3.new(0,0,0)
+Torsom5.MeshType = "Sphere"
+Torsow5 = Instance.new("Weld") 
+Torsow5.Part0 = ask4kingbily["Torso"] 
+Torsow5.Part1 = Torso5 
+Torsow5.Parent = Torso5 
+Torsow5.C0 = CFrame.new(0, 0, 0)*CFrame.fromEulerAnglesXYZ(0, 0, 0)
+
+Torso6 = Instance.new("Part") 
+Torso6.formFactor = 2 
+Torso6.Size = Vector3.new(1, 1, 1) 
+Torso6.Color = Color3.new(-1,-1,-1)
+Torso6.Name = "Torso6" 
+Torso6.Reflectance = 0
+Torso6.TopSurface = 0
+Torso6.Transparency = 1 
+Torso6.CanCollide = false 
+Torso6.Parent = mod 
+Torso6.BottomSurface = 0 
+Torsom6 = Instance.new("SpecialMesh")
+Torsom6.Parent = Torso6
+Torsom6.Name = "Mesh"
+Torsom6.Scale = Vector3.new(7.8,7.8,7.8)
+Torsom6.VertexColor = Vector3.new(0,0,0)
+Torsom6.MeshType = "Sphere"
+Torsow6 = Instance.new("Weld") 
+Torsow6.Part0 = ask4kingbily["Torso"] 
+Torsow6.Part1 = Torso6 
+Torsow6.Parent = Torso6 
+Torsow6.C0 = CFrame.new(0, 0, 0)*CFrame.fromEulerAnglesXYZ(0, 0, 0)
+
+Torso7 = Instance.new("Part") 
+Torso7.formFactor = 2 
+Torso7.Size = Vector3.new(1, 1, 1) 
+Torso7.Color = Color3.new(-1,-1,-1)
+Torso7.Name = "Torso7" 
+Torso7.Reflectance = 0
+Torso7.TopSurface = 0
+Torso7.Transparency = 1 
+Torso7.CanCollide = false 
+Torso7.Parent = mod 
+Torso7.BottomSurface = 0 
+Torsom7 = Instance.new("SpecialMesh")
+Torsom7.Parent = Torso7
+Torsom7.Name = "Mesh"
+Torsom7.Scale = Vector3.new(8,8,8)
+Torsom7.VertexColor = Vector3.new(0,0,0)
+Torsom7.MeshType = "Sphere"
+Torsow7 = Instance.new("Weld") 
+Torsow7.Part0 = ask4kingbily["Torso"] 
+Torsow7.Part1 = Torso7 
+Torsow7.Parent = Torso7 
+Torsow7.C0 = CFrame.new(0, 0, 0)*CFrame.fromEulerAnglesXYZ(0, 0, 0)
+
+Torso8 = Instance.new("Part") 
+Torso8.formFactor = 2 
+Torso8.Size = Vector3.new(1, 1, 1) 
+Torso8.Color = Color3.new(-1,-1,-1)
+Torso8.Name = "Torso8" 
+Torso8.Reflectance = 0
+Torso8.TopSurface = 0
+Torso8.Transparency = 1 
+Torso8.CanCollide = false 
+Torso8.Parent = mod 
+Torso8.BottomSurface = 0 
+Torsom8 = Instance.new("SpecialMesh")
+Torsom8.Parent = Torso8
+Torsom8.Name = "Mesh"
+Torsom8.Scale = Vector3.new(8.2,8.2,8.2)
+Torsom8.VertexColor = Vector3.new(0,0,0)
+Torsom8.MeshType = "Sphere"
+Torsow8 = Instance.new("Weld") 
+Torsow8.Part0 = ask4kingbily["Torso"] 
+Torsow8.Part1 = Torso8 
+Torsow8.Parent = Torso8 
+Torsow8.C0 = CFrame.new(0, 0, 0)*CFrame.fromEulerAnglesXYZ(0, 0, 0)
+
+Torso9 = Instance.new("Part") 
+Torso9.formFactor = 2 
+Torso9.Size = Vector3.new(1, 1, 1) 
+Torso9.Color = Color3.new(-1,-1,-1)
+Torso9.Name = "Torso9" 
+Torso9.Reflectance = 0
+Torso9.TopSurface = 0
+Torso9.Transparency = 1 
+Torso9.CanCollide = false 
+Torso9.Parent = mod 
+Torso9.BottomSurface = 0 
+Torsom9 = Instance.new("SpecialMesh")
+Torsom9.Parent = Torso9
+Torsom9.Name = "Mesh"
+Torsom9.Scale = Vector3.new(8.4,8.4,8.4)
+Torsom9.VertexColor = Vector3.new(0,0,0)
+Torsom9.MeshType = "Sphere"
+Torsow9 = Instance.new("Weld") 
+Torsow9.Part0 = ask4kingbily["Torso"] 
+Torsow9.Part1 = Torso9 
+Torsow9.Parent = Torso9 
+Torsow9.C0 = CFrame.new(0, 0, 0)*CFrame.fromEulerAnglesXYZ(0, 0, 0)
+wait()
+ask4kingbily["Right Arm"].Transparency = 1
+ask4kingbily["Right Leg"].Transparency = 1
+ask4kingbily["Left Arm"].Transparency = 1
+ask4kingbily["Left Leg"].Transparency = 1
+ask4kingbily["Torso"].Transparency = 1
+ask4kingbily["Head"].Transparency = 1
+ask4kingbily["Head"]["face"]: Remove()
+
+function change()
+Torso2.Transparency = 0.1
+wait()
+Torso3.Transparency = 0.1
+wait()
+Torso4.Transparency = 0.1
+wait()
+Torso5.Transparency = 0.1
+wait()
+Torso6.Transparency = 0.1
+wait()
+Torso7.Transparency = 0.1
+wait()
+Torso8.Transparency = 0.1
+wait()
+Torso9.Transparency = 0.1
+wait()
+Torso9.Transparency = 0.2
+wait()
+Torso8.Transparency = 0.2
+wait()
+Torso7.Transparency = 0.2
+wait()
+Torso6.Transparency = 0.2
+wait()
+Torso5.Transparency = 0.2
+wait()
+Torso4.Transparency = 0.2
+wait()
+Torso3.Transparency = 0.2
+wait()
+Torso2.Transparency = 0.2
+wait()
+Torso2.Transparency = 0.3
+wait()
+Torso3.Transparency = 0.3
+wait()
+Torso4.Transparency = 0.3
+wait()
+Torso5.Transparency = 0.3
+wait()
+Torso6.Transparency = 0.3
+wait()
+Torso7.Transparency = 0.3
+wait()
+Torso8.Transparency = 0.3
+wait()
+Torso9.Transparency = 0.3
+wait()
+Torso9.Transparency = 0.4
+wait()
+Torso9.Transparency = 0.5
+wait()
+Torso8.Transparency = 0.5
+wait()
+Torso7.Transparency = 0.5
+wait()
+Torso6.Transparency = 0.5
+wait()
+Torso5.Transparency = 0.5
+wait()
+Torso4.Transparency = 0.5
+wait()
+Torso3.Transparency = 0.5
+wait()
+Torso2.Transparency = 0.5
+wait()
+Torso2.Transparency = 0.6
+wait()
+Torso3.Transparency = 0.6
+wait()
+Torso4.Transparency = 0.6
+wait()
+Torso5.Transparency = 0.6
+wait()
+Torso6.Transparency = 0.6
+wait()
+Torso7.Transparency = 0.6
+wait()
+Torso8.Transparency = 0.6
+wait()
+Torso9.Transparency = 0.6
+wait()
+Torso9.Transparency = 0.7
+wait()
+Torso8.Transparency = 0.7
+wait()
+Torso7.Transparency = 0.7
+wait()
+Torso6.Transparency = 0.7
+wait()
+Torso5.Transparency = 0.7
+wait()
+Torso4.Transparency = 0.7
+wait()
+Torso3.Transparency = 0.7
+wait()
+Torso2.Transparency = 0.7
+wait()
+Torso2.Transparency = 0.8
+wait()
+Torso3.Transparency = 0.8
+wait()
+Torso4.Transparency = 0.8
+wait()
+Torso5.Transparency = 0.8
+wait()
+Torso6.Transparency = 0.8
+wait()
+Torso7.Transparency = 0.8
+wait()
+Torso8.Transparency = 0.8
+wait()
+Torso9.Transparency = 0.8
+wait()
+Torso9.Transparency = 0.9
+wait()
+Torso8.Transparency = 0.9
+wait()
+Torso7.Transparency = 0.9
+wait()
+Torso6.Transparency = 0.9
+wait()
+Torso5.Transparency = 0.9
+wait()
+Torso4.Transparency = 0.9
+wait()
+Torso3.Transparency = 0.9
+wait()
+Torso2.Transparency = 0.9
+wait()
+Torso2.Transparency = 1
+wait()
+Torso3.Transparency = 1
+wait()
+Torso4.Transparency = 1
+wait()
+Torso5.Transparency = 1
+wait()
+Torso6.Transparency = 1
+wait()
+Torso7.Transparency = 1
+wait()
+Torso8.Transparency = 1
+wait()
+Torso9.Transparency = 1
+wait()
+Torso9.Transparency = 0.9
+wait()
+Torso8.Transparency = 0.9
+wait()
+Torso7.Transparency = 0.9
+wait()
+Torso6.Transparency = 0.9
+wait()
+Torso5.Transparency = 0.9
+wait()
+Torso4.Transparency = 0.9
+wait()
+Torso3.Transparency = 0.9
+wait()
+Torso2.Transparency = 0.9
+wait()
+Torso2.Transparency = 0.8
+wait()
+Torso3.Transparency = 0.8
+wait()
+Torso4.Transparency = 0.8
+wait()
+Torso5.Transparency = 0.8
+wait()
+Torso6.Transparency = 0.8
+wait()
+Torso7.Transparency = 0.8
+wait()
+Torso8.Transparency = 0.8
+wait()
+Torso9.Transparency = 0.8
+wait()
+Torso9.Transparency = 0.7
+wait()
+Torso8.Transparency = 0.7
+wait()
+Torso7.Transparency = 0.7
+wait()
+Torso6.Transparency = 0.7
+wait()
+Torso5.Transparency = 0.7
+wait()
+Torso4.Transparency = 0.7
+wait()
+Torso3.Transparency = 0.7
+wait()
+Torso2.Transparency = 0.7
+wait()
+Torso2.Transparency = 0.6
+wait()
+Torso3.Transparency = 0.6
+wait()
+Torso4.Transparency = 0.6
+wait()
+Torso5.Transparency = 0.6
+wait()
+Torso6.Transparency = 0.6
+wait()
+Torso7.Transparency = 0.6
+wait()
+Torso8.Transparency = 0.6
+wait()
+Torso9.Transparency = 0.6
+wait()
+Torso9.Transparency = 0.5
+wait()
+Torso8.Transparency = 0.5
+wait()
+Torso7.Transparency = 0.5
+wait()
+Torso6.Transparency = 0.5
+wait()
+Torso5.Transparency = 0.5
+wait()
+Torso4.Transparency = 0.5
+wait()
+Torso3.Transparency = 0.5
+wait()
+Torso2.Transparency = 0.5
+wait()
+Torso2.Transparency = 0.4
+wait()
+Torso3.Transparency = 0.4
+wait()
+Torso4.Transparency = 0.4
+wait()
+Torso5.Transparency = 0.4
+wait()
+Torso6.Transparency = 0.4
+wait()
+Torso7.Transparency = 0.4
+wait()
+Torso8.Transparency = 0.4
+wait()
+Torso9.Transparency = 0.4
+wait()
+Torso9.Transparency = 0.3
+wait()
+Torso8.Transparency = 0.3
+wait()
+Torso7.Transparency = 0.3
+wait()
+Torso6.Transparency = 0.3
+wait()
+Torso5.Transparency = 0.3
+wait()
+Torso4.Transparency = 0.3
+wait()
+Torso3.Transparency = 0.3
+wait()
+Torso2.Transparency = 0.3
+wait()
+Torso2.Transparency = 0.2
+wait()
+Torso3.Transparency = 0.2
+wait()
+Torso4.Transparency = 0.2
+wait()
+Torso5.Transparency = 0.2
+wait()
+Torso6.Transparency = 0.2
+wait()
+Torso7.Transparency = 0.2
+wait()
+Torso8.Transparency = 0.2
+wait()
+Torso9.Transparency = 0.2
+wait()
+Torso9.Transparency = 0.1
+wait()
+Torso8.Transparency = 0.1
+wait()
+Torso7.Transparency = 0.1
+wait()
+Torso6.Transparency = 0.1
+wait()
+Torso5.Transparency = 0.1
+wait()
+Torso4.Transparency = 0.1
+wait()
+Torso3.Transparency = 0.1
+wait()
+Torso2.Transparency = 0.1
+wait()
+Torso2.Transparency = 0
+wait()
+Torso3.Transparency = 0
+wait()
+Torso4.Transparency = 0
+wait()
+Torso5.Transparency = 0
+wait()
+Torso6.Transparency = 0
+wait()
+Torso7.Transparency = 0
+wait()
+Torso8.Transparency = 0
+wait()
+Torso9.Transparency = 0
+end
+
+while true do
+change()
+end

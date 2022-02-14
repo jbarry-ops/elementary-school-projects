@@ -1,0 +1,89 @@
+Disasters = {"Killall","DeleteBase","Kamikaze"}
+
+w = game.Workspace:GetChildren()
+p = game.Players:GetChildren()
+
+val = math.random(1,#Disasters)
+
+function Killall()
+local m = Instance.new("Message")
+m.Parent = game.Workspace
+m.Text = "Disaster: Killall"
+local h = Instance.new("Hint")
+h.Parent = game.Workspace
+h.Text = "Nobody can survive this.."
+for i = 1,#p do
+p[i].Character:BreakJoints()
+end
+wait(2)
+m:Remove()
+h:Remove()
+end
+
+function DeleteBase()
+local Base2 = game.Workspace.Base:Clone()
+local m = Instance.new("Message")
+m.Parent = game.Workspace
+m.Text = "Disaster: DeleteBase"
+local h = Instance.new("Hint")
+h.Parent = game.Workspace
+h.Text = "I am EVIL. 'Mysterious Old Man'"
+game.Workspace.Base:Remove()
+wait(2)
+m:Remove()
+h:Remove()
+wait(5)
+Base2.Parent = game.Workspace
+end
+
+function Kamikaze()
+local m = Instance.new("Message")
+m.Parent = game.Workspace
+m.Text = "Disaster: Kamikaze"
+local h = Instance.new("Hint")
+h.Parent = game.Workspace
+h.Text = "There is a traitor among you.."
+wait(2)
+m:Remove()
+h:Remove()
+
+p = game.Players:getChildren()
+
+plyr = p[math.random(1,#p)]
+
+kmsg = Instance.new("Message")
+kmsg.Text = "YOU ARE IT."
+kmsg.Parent = plyr
+wait(5)
+kmsg:remove()
+
+wait(5)
+
+e = Instance.new("Explosion")
+e.BlastRadius = 35
+e.BlastPressure = 100
+e.Position = plyr["Character"]:findFirstChild("Torso").Position
+e.Parent = game.Workspace
+end
+
+function Pick()
+if val == 1 then 
+Killall()
+val = math.random(1,#Disasters)
+
+if val == 2 then
+DeleteBase()
+val = math.random(1,#Disasters)
+
+if val == 3 then
+Kamikaze()
+val = math.random(1,#Disasters)
+end
+end
+end
+end
+
+while true do
+wait(10)
+Pick()
+end

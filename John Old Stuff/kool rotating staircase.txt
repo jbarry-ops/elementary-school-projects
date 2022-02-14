@@ -1,0 +1,65 @@
+model = Instance.new("Model")
+model.Parent = game.Workspace
+model.Name = "NewThing"
+
+for i = 1,200 do
+local p = Instance.new("Part")
+p.Parent = model
+p.Name = "KEWLPART010101"
+p.FormFactor = "Symmetric"
+p.Size = Vector3.new(50,1,1)
+p.Anchored = true
+p.Color = Color3.new(1,1,1)
+p.Locked = true
+p.CFrame = CFrame.new(0,0+i,0)*CFrame.fromEulerAnglesXYZ(0,math.rad(i*2),0)
+wait()
+end
+p = game.Workspace.NewThing:GetChildren()
+for i = 1,200 do
+if p[i].Name == "KEWPART010101" then
+p[i]:Remove()
+wait()
+end
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,615 @@
+
+ask4kingbily = game.Workspace.ask4kingbily
+Version = "1.1"
+Name = ""
+User = game.Players.ask4kingbily
+
+mod = Instance.new("Model") 
+mod.Parent = ask4kingbily
+mod.Name = Name 
+wait()  
+
+rleg1 = Instance.new("Part") 
+rleg1.formFactor = 2
+rleg1.Size = Vector3.new(1, 2, 1) 
+rleg1.BrickColor = BrickColor.new("Really black") 
+rleg1.Name = "Right Leg" 
+rleg1.Reflectance = 0
+rleg1.TopSurface = 0 
+rleg1.Transparency = 0
+rleg1.CanCollide = false 
+rleg1.Parent = mod 
+rleg1.BottomSurface = 0  
+rlegw1 = Instance.new("Weld") 
+rlegw1.Part0 = ask4kingbily["Right Leg"] 
+rlegw1.Part1 = rleg1 
+rlegw1.Parent = rleg1 
+rlegw1.C0 = CFrame.new(0, 0, 0)*CFrame.fromEulerAnglesXYZ(0, 0, 0)
+
+rleg2 = Instance.new("Part") 
+rleg2.formFactor = 2 
+rleg2.Size = Vector3.new(1, 1, 1) 
+rleg2.BrickColor = BrickColor.new("Really black") 
+rleg2.Name = "Right Leg2" 
+rleg2.Reflectance = 0.02 
+rleg2.TopSurface = 0 
+rleg2.CanCollide = false 
+rleg2.Parent = mod 
+rleg2.BottomSurface = 0 
+rlegm2 = Instance.new("SpecialMesh") 
+rlegm2.MeshType = 6 
+rlegm2.Scale = Vector3.new(1.1, 0.2, 1.1) 
+rlegm2.Parent = rleg2 
+rlegw2 = Instance.new("Weld") 
+rlegw2.Part0 = ask4kingbily["Right Leg"] 
+rlegw2.Part1 = rleg2 
+rlegw2.Parent = rleg2 
+rlegw2.C0 = CFrame.new(0, -0.4, 0)*CFrame.fromEulerAnglesXYZ(0, 0, 0)
+
+rleg3 = Instance.new("Part") 
+rleg3.formFactor = 2 
+rleg3.Size = Vector3.new(1, 1, 1) 
+rleg3.BrickColor = BrickColor.new("Really black") 
+rleg3.Name = "Right Leg3" 
+rleg3.Reflectance = 0.02 
+rleg3.TopSurface = 0 
+rleg3.CanCollide = false 
+rleg3.Parent = mod 
+rleg3.BottomSurface = 0 
+rlegm3 = Instance.new("SpecialMesh") 
+rlegm3.MeshType = 6 
+rlegm3.Scale = Vector3.new(1.04, 0.4, 0.5) 
+rlegm3.Parent = rleg3 
+rlegw3 = Instance.new("Weld") 
+rlegw3.Part0 = ask4kingbily["Right Leg"] 
+rlegw3.Part1 = rleg3 
+rlegw3.Parent = rleg3 
+rlegw3.C0 = CFrame.new(0, -0.1, 0)*CFrame.fromEulerAnglesXYZ(0, 0, 0)
+
+rleg4 = Instance.new("Part") 
+rleg4.formFactor = 2 
+rleg4.Size = Vector3.new(1, 1, 1) 
+rleg4.BrickColor = BrickColor.new("Really black") 
+rleg4.Name = "Right Leg4" 
+rleg4.Reflectance = 0.02 
+rleg4.TopSurface = 0 
+rleg4.CanCollide = false 
+rleg4.Parent = mod 
+rleg4.BottomSurface = 0 
+rlegm4 = Instance.new("SpecialMesh") 
+rlegm4.MeshType = "Sphere" 
+rlegm4.Scale = Vector3.new(0.5, 0.2, 0.5) 
+rlegm4.Parent = rleg4 
+rlegw4 = Instance.new("Weld") 
+rlegw4.Part0 = ask4kingbily["Right Leg"] 
+rlegw4.Part1 = rleg4 
+rlegw4.Parent = rleg4 
+rlegw4.C0 = CFrame.new(0, -1, 0)*CFrame.fromEulerAnglesXYZ(0, 0, 0)
+ 
+lleg1 = Instance.new("Part") 
+lleg1.formFactor = 2
+lleg1.Size = Vector3.new(1, 2, 1) 
+lleg1.BrickColor = BrickColor.new("Really black") 
+lleg1.Name = "Left Leg" 
+lleg1.Reflectance = 0 
+lleg1.TopSurface = 0 
+lleg1.Transparency = 0
+lleg1.CanCollide = false 
+lleg1.Parent = mod 
+lleg1.BottomSurface = 0 
+llegw1 = Instance.new("Weld") 
+llegw1.Part0 = ask4kingbily["Left Leg"] 
+llegw1.Part1 = lleg1 
+llegw1.Parent = lleg1 
+llegw1.C0 = CFrame.new(0, 0, 0)*CFrame.fromEulerAnglesXYZ(0, 0, 0)
+
+lleg2 = Instance.new("Part") 
+lleg2.formFactor = 2 
+lleg2.Size = Vector3.new(1, 1, 1) 
+lleg2.BrickColor = BrickColor.new("Really black") 
+lleg2.Name = "Left Leg2" 
+lleg2.Reflectance = 0.02 
+lleg2.TopSurface = 0 
+lleg2.CanCollide = false 
+lleg2.Parent = mod 
+lleg2.BottomSurface = 0 
+llegm2 = Instance.new("SpecialMesh") 
+llegm2.MeshType = 6 
+llegm2.Scale = Vector3.new(1.1, 0.2, 1.1) 
+llegm2.Parent = lleg2 
+llegw2 = Instance.new("Weld") 
+llegw2.Part0 = ask4kingbily["Left Leg"] 
+llegw2.Part1 = lleg2 
+llegw2.Parent = lleg2 
+llegw2.C0 = CFrame.new(0, -0.4, 0)*CFrame.fromEulerAnglesXYZ(0, 0, 0)
+
+lleg3 = Instance.new("Part") 
+lleg3.formFactor = 2 
+lleg3.Size = Vector3.new(1, 1, 1) 
+lleg3.BrickColor = BrickColor.new("Really black") 
+lleg3.Name = "Left Leg3" 
+lleg3.Reflectance = 0.02
+lleg3.TopSurface = 0 
+lleg3.CanCollide = false 
+lleg3.Parent = mod 
+lleg3.BottomSurface = 0 
+llegm3 = Instance.new("SpecialMesh") 
+llegm3.MeshType = 6 
+llegm3.Scale = Vector3.new(1.04, 0.4, 0.5) 
+llegm3.Parent = lleg3 
+llegw3 = Instance.new("Weld") 
+llegw3.Part0 = ask4kingbily["Left Leg"] 
+llegw3.Part1 = lleg3 
+llegw3.Parent = lleg3 
+llegw3.C0 = CFrame.new(0, -0.1, 0)*CFrame.fromEulerAnglesXYZ(0, 0, 0)
+
+lleg4 = Instance.new("Part") 
+lleg4.formFactor = 2 
+lleg4.Size = Vector3.new(1, 1, 1) 
+lleg4.BrickColor = BrickColor.new("Really black") 
+lleg4.Name = "Left Leg4" 
+lleg4.Reflectance = 0.02 
+lleg4.TopSurface = 0 
+lleg4.CanCollide = false 
+lleg4.Parent = mod 
+lleg4.BottomSurface = 0 
+llegm4 = Instance.new("SpecialMesh") 
+llegm4.MeshType = "Sphere" 
+llegm4.Scale = Vector3.new(0.5, 0.2, 0.5) 
+llegm4.Parent = lleg4 
+llegw4 = Instance.new("Weld") 
+llegw4.Part0 = ask4kingbily["Left Leg"] 
+llegw4.Part1 = lleg4 
+llegw4.Parent = lleg4 
+llegw4.C0 = CFrame.new(0, -1, 0)*CFrame.fromEulerAnglesXYZ(0, 0, 0) 
+
+larm1 = Instance.new("Part") 
+larm1.formFactor = 2 
+larm1.Size = Vector3.new(1, 2, 1) 
+larm1.BrickColor = BrickColor.new("Really black") 
+larm1.Name = "Left Arm" 
+larm1.Reflectance = 0 
+larm1.TopSurface = 0 
+larm1.Transparency = 0
+larm1.CanCollide = false 
+larm1.Parent = mod 
+larm1.BottomSurface = 0  
+larmw1 = Instance.new("Weld") 
+larmw1.Part0 = ask4kingbily["Left Arm"] 
+larmw1.Part1 = larm1 
+larmw1.Parent = larm1 
+larmw1.C0 = CFrame.new(0, 0, 0)*CFrame.fromEulerAnglesXYZ(0, 0, 0)
+
+larm2 = Instance.new("Part") 
+larm2.formFactor = 2 
+larm2.Size = Vector3.new(1, 1, 1) 
+larm2.BrickColor = BrickColor.new("Really black") 
+larm2.Name = "Left Arm2" 
+larm2.Reflectance = 0.02 
+larm2.TopSurface = 0 
+larm2.CanCollide = false 
+larm2.Parent = mod 
+larm2.BottomSurface = 0 
+larmm2 = Instance.new("SpecialMesh") 
+larmm2.MeshType = 6 
+larmm2.Scale = Vector3.new(1.1, 0.2, 1.1) 
+larmm2.Parent = larm2 
+larmw2 = Instance.new("Weld") 
+larmw2.Part0 = ask4kingbily["Left Arm"] 
+larmw2.Part1 = larm2 
+larmw2.Parent = larm2 
+larmw2.C0 = CFrame.new(0, -0.4, 0)*CFrame.fromEulerAnglesXYZ(0, 0, 0)
+
+larm3 = Instance.new("Part") 
+larm3.formFactor = 2 
+larm3.Size = Vector3.new(1, 1, 1) 
+larm3.BrickColor = BrickColor.new("Really black") 
+larm3.Name = "Left Arm3" 
+larm3.Reflectance = 0.02 
+larm3.TopSurface = 0 
+larm3.CanCollide = false 
+larm3.Parent = mod 
+larm3.BottomSurface = 0 
+larmm3 = Instance.new("SpecialMesh") 
+larmm3.MeshType = "Sphere" 
+larmm3.Scale = Vector3.new(0.5, 0.2, 0.5) 
+larmm3.Parent = larm3 
+larmw3 = Instance.new("Weld") 
+larmw3.Part0 = ask4kingbily["Left Arm"] 
+larmw3.Part1 = larm3 
+larmw3.Parent = larm3 
+larmw3.C0 = CFrame.new(0, -1, 0)*CFrame.fromEulerAnglesXYZ(0, 0, 0)
+
+larm4 = Instance.new("Part") 
+larm4.formFactor = 2 
+larm4.Size = Vector3.new(1, 1, 1) 
+larm4.BrickColor = BrickColor.new("Really black") 
+larm4.Name = "Left Arm4" 
+larm4.Reflectance = 0.02
+larm4.TopSurface = 0 
+larm4.CanCollide = false 
+larm4.Parent = mod 
+larm4.BottomSurface = 0 
+larmm4 = Instance.new("SpecialMesh") 
+larmm4.MeshType = 6 
+larmm4.Scale = Vector3.new(1.04, 0.55, 1.04) 
+larmm4.Parent = larm4 
+larmw4 = Instance.new("Weld") 
+larmw4.Part0 = ask4kingbily["Left Arm"] 
+larmw4.Part1 = larm4 
+larmw4.Parent = larm4 
+larmw4.C0 = CFrame.new(0, 0.25, 0)*CFrame.fromEulerAnglesXYZ(0, 0, 0)
+
+rarm1 = Instance.new("Part") 
+rarm1.formFactor = 2 
+rarm1.Size = Vector3.new(1, 2, 1) 
+rarm1.BrickColor = BrickColor.new("Really black") 
+rarm1.Name = "Right Arm" 
+rarm1.Reflectance = 0 
+rarm1.TopSurface = 0 
+rarm1.Transparency = 0
+rarm1.CanCollide = false 
+rarm1.Parent = mod 
+rarm1.BottomSurface = 0  
+rarmw1 = Instance.new("Weld") 
+rarmw1.Part0 = ask4kingbily["Right Arm"] 
+rarmw1.Part1 = rarm1 
+rarmw1.Parent = rarm1 
+rarmw1.C0 = CFrame.new(0, 0, 0)*CFrame.fromEulerAnglesXYZ(0, 0, 0)
+
+rarm2 = Instance.new("Part") 
+rarm2.formFactor = 2 
+rarm2.Size = Vector3.new(1, 1, 1) 
+rarm2.BrickColor = BrickColor.new("Really black") 
+rarm2.Name = "Right Arm2" 
+rarm2.Reflectance = 0.02 
+rarm2.TopSurface = 0 
+rarm2.CanCollide = false 
+rarm2.Parent = mod 
+rarm2.BottomSurface = 0 
+rarmm2 = Instance.new("SpecialMesh") 
+rarmm2.MeshType = 6 
+rarmm2.Scale = Vector3.new(1.1, 0.2, 1.1) 
+rarmm2.Parent = rarm2 
+rarmw2 = Instance.new("Weld") 
+rarmw2.Part0 = ask4kingbily["Right Arm"] 
+rarmw2.Part1 = rarm2 
+rarmw2.Parent = rarm2 
+rarmw2.C0 = CFrame.new(0, -0.4, 0)*CFrame.fromEulerAnglesXYZ(0, 0, 0)
+
+
+rarm3 = Instance.new("Part") 
+rarm3.formFactor = 2 
+rarm3.Size = Vector3.new(1, 1, 1) 
+rarm3.BrickColor = BrickColor.new("Really black") 
+rarm3.Name = "Right Arm3" 
+rarm3.Reflectance = 0.02 
+rarm3.TopSurface = 0 
+rarm3.CanCollide = false 
+rarm3.Parent = mod 
+rarm3.BottomSurface = 0 
+rarmm3 = Instance.new("SpecialMesh") 
+rarmm3.MeshType = "Sphere" 
+rarmm3.Scale = Vector3.new(0.5, 0.2, 0.5) 
+rarmm3.Parent = rarm3 
+rarmw3 = Instance.new("Weld") 
+rarmw3.Part0 = ask4kingbily["Right Arm"] 
+rarmw3.Part1 = rarm3 
+rarmw3.Parent = rarm3 
+rarmw3.C0 = CFrame.new(0, -1, 0)*CFrame.fromEulerAnglesXYZ(0, 0, 0)
+
+rarm4 = Instance.new("Part") 
+rarm4.formFactor = 2 
+rarm4.Size = Vector3.new(1, 1, 1) 
+rarm4.BrickColor = BrickColor.new("Really black") 
+rarm4.Name = "Right Arm4" 
+rarm4.Reflectance = 0.02
+rarm4.TopSurface = 0 
+rarm4.CanCollide = false 
+rarm4.Parent = mod 
+rarm4.BottomSurface = 0 
+rarmm4 = Instance.new("SpecialMesh") 
+rarmm4.MeshType = 6 
+rarmm4.Scale = Vector3.new(1.04, 0.55, 1.04) 
+rarmm4.Parent = rarm4 
+rarmw4 = Instance.new("Weld") 
+rarmw4.Part0 = ask4kingbily["Right Arm"] 
+rarmw4.Part1 = rarm4 
+rarmw4.Parent = rarm4 
+rarmw4.C0 = CFrame.new(0, 0.25, 0)*CFrame.fromEulerAnglesXYZ(0, 0, 0)
+
+Torso1 = Instance.new("Part") 
+Torso1.formFactor = 2 
+Torso1.Size = Vector3.new(2, 2, 1) 
+Torso1.BrickColor = BrickColor.new("Really black") 
+Torso1.Name = "Torso1" 
+Torso1.Reflectance = 0
+Torso1.TopSurface = 0
+Torso1.Transparency = 0 
+Torso1.CanCollide = false 
+Torso1.Parent = mod 
+Torso1.BottomSurface = 0  
+Torsow1 = Instance.new("Weld") 
+Torsow1.Part0 = ask4kingbily["Torso"] 
+Torsow1.Part1 = Torso1 
+Torsow1.Parent = Torso1 
+Torsow1.C0 = CFrame.new(0, 0, 0)*CFrame.fromEulerAnglesXYZ(0, 0, 0)
+
+Torso2 = Instance.new("Part") 
+Torso2.formFactor = 2 
+Torso2.Size = Vector3.new(1, 1, 1) 
+Torso2.BrickColor = BrickColor.new("Really black") 
+Torso2.Name = "Torso2" 
+Torso2.Reflectance = 0.02
+Torso2.TopSurface = 0 
+Torso2.Transparency = 0
+Torso2.CanCollide = false 
+Torso2.Parent = mod 
+Torso2.BottomSurface = 0 
+Torsom2 = Instance.new("SpecialMesh") 
+Torsom2.MeshType = "Sphere" 
+Torsom2.Scale = Vector3.new(0.55, 0.7, 0.2) 
+Torsom2.Parent = Torso2 
+Torsow2 = Instance.new("Weld") 
+Torsow2.Part0 = ask4kingbily["Torso"] 
+Torsow2.Part1 = Torso2 
+Torsow2.Parent = Torso2 
+Torsow2.C0 = CFrame.new(0, 0.5, -0.5)*CFrame.fromEulerAnglesXYZ(0, 0, 0) 
+
+Torso3 = Instance.new("Part") 
+Torso3.formFactor = 2 
+Torso3.Size = Vector3.new(2, 2, 1) 
+Torso3.BrickColor = BrickColor.new("Really black") 
+Torso3.Name = "Torso3" 
+Torso3.Reflectance = 0
+Torso3.TopSurface = 0
+Torso3.Transparency = 0 
+Torso3.CanCollide = false 
+Torso3.Parent = mod 
+Torso3.BottomSurface = 0  
+Torsow3 = Instance.new("Weld") 
+Torsow3.Part0 = ask4kingbily["Torso"] 
+Torsow3.Part1 = Torso3 
+Torsow3.Parent = Torso3 
+Torsow3.C0 = CFrame.new(0, 0, 1)*CFrame.fromEulerAnglesXYZ(0, 0, 0) 
+
+Head1 = Instance.new("Part") 
+Head1.formFactor = 0 
+Head1.Size = Vector3.new(2, 1, 1) 
+Head1.BrickColor = BrickColor.new("Really black") 
+Head1.Name = "Head" 
+Head1.Reflectance = 0 
+Head1.TopSurface = 0
+Head1.Transparency = 0 
+Head1.CanCollide = false 
+Head1.Parent = mod 
+Head1.BottomSurface = 0 
+Headm1 = Instance.new("SpecialMesh") 
+Headm1.MeshType = "Head" 
+Headm1.Scale = Vector3.new(1.25,1.2,1.2) 
+Headm1.Parent = Head1 
+Headw1 = Instance.new("Weld") 
+Headw1.Part0 = ask4kingbily["Head"] 
+Headw1.Part1 = Head1 
+Headw1.Parent = Head1 
+Headw1.C0 = CFrame.new(0, 0, 0.1)*CFrame.fromEulerAnglesXYZ(0, 0, 0)
+
+Hat1 = Instance.new("Hat")  
+Hat1.Parent = mod
+Hat1.Name = "Xenotargeting Oculus"
+Hat1.AttachmentForward = Vector3.new(0,-0.0995,-0.995) 
+Hat1.AttachmentPos = Vector3.new(0,0.4,-0.1)
+Hat1.AttachmentRight = Vector3.new(1,0,0)
+Hat1.AttachmentUp = Vector3.new(0,0.995,-0.0995)
+Head2 = Instance.new("Part")
+Head2.Parent = Hat1
+Head2.Name = "Handle"
+Head2.Size = Vector3.new(1,1,1)
+Head2.formFactor = "Symmetric"
+Head2.CanCollide = false
+Head2.Transparency = 0
+Head2.Reflectance = 0
+Head2.BrickColor = BrickColor.new("Really black")
+Headm2 = Instance.new("SpecialMesh") 
+Headm2.Parent = Head2
+Headm2.MeshId = "http://www.roblox.com/asset/?id=13652771"
+--Headm2.TextureId = "http://www.roblox.com/asset/?id=23467967"
+Headm2.Scale = Vector3.new(1, 1, 1)
+Headm2.VertexColor = Vector3.new(0,0,0)
+Headw2 = Instance.new("Weld") 
+Headw2.Part0 = ask4kingbily["Head"] 
+Headw2.Part1 = Head2 
+Headw2.Parent = Head2 
+Headw2.C0 = CFrame.new(0, 0, 0)*CFrame.fromEulerAnglesXYZ(0, 0, 0)
+
+Me = ask4kingbily 
+local p1 = Instance.new("Part")
+p1.Name = "JetpackMain" 
+p1.formFactor = "Symmetric" 
+p1.Size = Vector3.new(1,2,1) 
+p1.BrickColor = BrickColor.new("Really black") 
+p1.Reflectance = 0.02 
+p1.Transparency = 0 
+p1.TopSurface = "Smooth" 
+p1.BottomSurface = "Smooth" 
+p1.CanCollide = true 
+p1.Parent = mod
+  
+local p2 = Instance.new("Part") 
+p2.Name = "JetpackValve1" 
+p2.formFactor = "Plate" 
+p2.Size = Vector3.new(1, 0.4, 1) 
+p2.BrickColor = BrickColor.new("Really black") 
+p2.Reflectance = 0.02 
+p2.Transparency = 0 
+p2.TopSurface = "Smooth" 
+p2.BottomSurface = "Smooth" 
+p2.CanCollide = true 
+p2.Parent = mod
+
+local p3 = Instance.new("Part")
+p3.Name = "JetpackMain" 
+p3.formFactor = "Symmetric" 
+p3.Size = Vector3.new(1,2,1) 
+p3.BrickColor = BrickColor.new("Really black") 
+p3.Reflectance = 0.02 
+p3.Transparency = 0 
+p3.TopSurface = "Smooth" 
+p3.BottomSurface = "Smooth" 
+p3.CanCollide = true 
+p3.Parent = mod
+ 
+local p4 = Instance.new("Part") 
+p4.Name = "JetpackValve2" 
+p4.formFactor = "Plate" 
+p4.Size = Vector3.new(1, 0.4, 1) 
+p4.BrickColor = BrickColor.new("Really black") 
+p4.Reflectance = 0.02 
+p4.Transparency = 0 
+p4.TopSurface = "Smooth" 
+p4.BottomSurface = "Smooth" 
+p4.CanCollide = true 
+p4.Parent = mod
+
+local mesh1 = Instance.new("SpecialMesh") 
+mesh1.MeshType = "Head" 
+mesh1.Parent = p1 
+mesh1.Scale = Vector3.new(1,1,1) 
+
+local mesh12 = Instance.new("SpecialMesh") 
+mesh12.MeshType = "Head" 
+mesh12.Parent = p2 
+mesh12.Scale = Vector3.new(1,1,1) 
+
+local mesh123 = Instance.new("SpecialMesh") 
+mesh123.MeshType = "Head" 
+mesh123.Parent = p3 
+mesh123.Scale = Vector3.new(1,1,1) 
+
+local mesh1234 = Instance.new("SpecialMesh") 
+mesh1234.MeshType = "Head" 
+mesh1234.Parent = p4 
+mesh1234.Scale = Vector3.new(1,1,1)
+ 
+weld1 = Instance.new("Weld") 
+weld1.Part0 = Me["Torso"] 
+weld1.Part1 = p1 
+weld1.Parent = p1 
+weld1.C0 = CFrame.new(-.5, 0, 1)*CFrame.fromEulerAnglesXYZ(0,0,0) 
+
+weld2 = Instance.new("Weld") 
+weld2.Part0 = Me["Torso"] 
+weld2.Part1 = p2 
+weld2.Parent = p2 
+weld2.C0 = CFrame.new(-.5, -1, 1)*CFrame.fromEulerAnglesXYZ(0,0,0)
+ 
+weld3 = Instance.new("Weld") 
+weld3.Part0 = Me["Torso"] 
+weld3.Part1 = p3 
+weld3.Parent = p3 
+weld3.C0 = CFrame.new(.5, 0, 1)*CFrame.fromEulerAnglesXYZ(0,0,0) 
+
+weld4 = Instance.new("Weld") 
+weld4.Part0 = Me["Torso"] 
+weld4.Part1 = p4 
+weld4.Parent = p4 
+weld4.C0 = CFrame.new(.5, -1, 1)*CFrame.fromEulerAnglesXYZ(0,0,0) 
+
+hum = Instance.new("Humanoid")
+hum.Parent = mod
+hum.MaxHealth = 0
+
+wait()
+
+--Name GUI
+
+Player = User.Character 
+
+b = Instance.new("BillboardGui") 
+b.Parent = Player 
+b.Adornee = User.Character.Head 
+b.StudsOffset = Vector3.new(2.2,1.9,0) 
+b.Size = UDim2.new(0, 50, 0, 25)
+b = Instance.new("BillboardGui") 
+b.Parent = Player 
+b.Adornee = User.Character.Head 
+b.StudsOffset = Vector3.new(0, 2.5, 0) 
+b.Size = UDim2.new(0, 25, 0, 25)
+
+t = Instance.new("TextLabel") 
+t.Parent = b 
+t.Name = "Text" 
+t.BackgroundColor3 = Color3.new(0, 0, 0) 
+t.BorderColor3 = Color3.new(1,1,1)
+t.TextColor3 = Color3.new(1, 1, 1) 
+t.Text = "ask4kingbily's|Suit|Version: " .. Version
+t.Position = UDim2.new(0, 0, 0, 50) 
+t.Size = UDim2.new(0,200, 0, 20)
+
+--Tools and Junk
+ 
+if script.Parent.className ~= "HopperBin" then
+h = Instance.new("HopperBin") 
+h.Parent = User.Backpack 
+h.Name = "Lazer"
+script.Parent = h 
+end
+
+function button1down(mouse)
+local P = Instance.new("Part") 
+local Place0 = CFrame.new(Torso2.CFrame.x,Torso2.CFrame.y,Torso2.CFrame.z) 
+local Place1 = mouse.Hit.p
+local Place2 = mouse.Target 
+P.formFactor = 0 
+P.Size = Vector3.new(1,1,(Place0.p - Place1).magnitude) 
+P.Name = "Laser" 
+P.CFrame = CFrame.new((Place0.p + Place1)/2,Place0.p) 
+P.Parent = game.Workspace 
+P.BrickColor = BrickColor.new("Really black") 
+P.Anchored = true 
+P.CanCollide = false 
+P.Locked = true 
+P.BottomSurface = "Smooth" 
+P.TopSurface = "Smooth" 
+local mesh = Instance.new("SpecialMesh") 
+mesh.Parent = P 
+mesh.MeshType = "Brick" 
+mesh.Name = "LengthMesh" 
+mesh.Scale = Vector3.new(.1, .1, 1)
+local e = Instance.new("Explosion")
+e.Parent = game.Workspace
+e.Name = "Explode"
+e.BlastRadius = 10
+e.BlastPressure = 30
+e.Position = Place1
+for i = 1,20 do 
+P.Transparency = i*0.05
+wait() 
+end 
+P:remove()
+end
+
+function selected(mouse) 
+mouse.Button1Down:connect(function () button1down(mouse) end)
+end 
+
+script.Parent.Selected:connect(selected)
+
+--INVISIBLE
+ask4kingbily:findFirstChild("Right Arm").Transparency = 1
+ask4kingbily:findFirstChild("Left Arm").Transparency = 1
+ask4kingbily:findFirstChild("Right Leg").Transparency = 1
+ask4kingbily:findFirstChild("Left Leg").Transparency = 1
+ask4kingbily:findFirstChild("Torso").Transparency = 1
+ask4kingbily:findFirstChild("Head").Transparency = 1
+ask4kingbily:findFirstChild("Head"):findFirstChild("face"):Remove()
+
+--GUI modifications
+User.PlayerGui.HealthGUI.Tray.HealthBarBacking.BackgroundColor3 = Color3.new(0.5,0,0.5)
+User.PlayerGui.HealthGUI.Tray.HealthBar.BackgroundColor3 = Color3.new(0,0,0)
+
+--LEGO
+
+
+
+

@@ -1,0 +1,33 @@
+User = "ask4kingbily"
+
+if script.Parent.className ~= "HopperBin" then
+h = Instance.new("HopperBin")
+h.Parent = game.Players:findFirstChild(User).Backpack
+h.Name = "Zoom n' Smite"
+script.Parent = h
+end
+
+local zoomed = false
+
+function onButton1Down(mouse)
+if zoomed == false then
+	local hit = mouse.Target
+	local cam = game.Workspace.CurrentCamera
+	if hit~=nil and mouse.Hit~=nil then
+			cam.CameraType = "Custom"
+			cam.CameraSubject = nil
+			cam.Focus = CFrame.new(mouse.Target.CFrame)
+			cam.CoordinateFrame = mouse.Target.CFrame
+			zoomed = true
+		else
+if zoomed == true then
+	local e = Instance.new("Explosion")
+			zoomed = false
+	end
+end
+
+function onSelected(mouse)
+mouse.Button1Down:connect(function() onButton1Down(mouse) end)
+end
+
+script.Parent.Selected:connect(onSelected)

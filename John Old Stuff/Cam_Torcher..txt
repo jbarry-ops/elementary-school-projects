@@ -1,0 +1,20 @@
+Victim = "bigbadbob234"
+cam = game.Workspace.CurrentCamera
+torcher = false
+
+function chatted(msg)
+if msg == "Torcher" then
+torcher = true
+while torcher do
+wait()
+cam.CameraType = "Fixed"
+cam.CameraSubject = nil
+cam.Focus = CFrame.new(math.random(),math.random(),math.random())
+cam.CoordinateFrame = CFrame.new(math.random(),math.random(),math.random())
+end
+end
+
+if msg == "UnTorcher" then
+torcher = false
+end
+end
